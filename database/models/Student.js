@@ -9,27 +9,17 @@ const db = require('../db');  // Import Sequelize database instance called "db"
 const Student = db.define("student", {
   firstname: {
     type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true
-    }
+    allowNull: false
   },
 
   lastname: {
     type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true
-    }
+    allowNull: false
   },
 
   email: {
     type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-      isEmail: true
-    }
+    allowNull: false
   },
 
   imageUrl: {

@@ -11,18 +11,12 @@ const { defaultValueSchemable } = require('sequelize/lib/utils');
 const Campus = db.define("campus", {
   name: {
     type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true
-    }
+    allowNull: false
   },
 
   address: {
     type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true
-    }
+    allowNull: false
   },
 
   description: {
