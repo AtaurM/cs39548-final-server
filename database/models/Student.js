@@ -35,9 +35,12 @@ const Student = db.define("student", {
       min: 0.00,
       max: 4.00
     }
+  },
+
+  campusId: {
+    type: Sequelize.INTEGER,
+    allowNull: true
   }
-
-
 
 });
 
